@@ -1,5 +1,6 @@
-import Login from "./comps/Login";
-import Register from "./comps/Register";
+import Dashboard from "./comps/admin/Dashboard";
+import Login from "./comps/student/Login";
+import Register from "./comps/student/Register";
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <Login />
       <hr />
       <Register />
+
+      <hr />
+      <Dashboard />
     </div>
   );
 }
