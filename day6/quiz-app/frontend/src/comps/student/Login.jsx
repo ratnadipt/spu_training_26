@@ -1,7 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigation = useNavigate();
   let [formData, setFormData] = useState({
     userName: "",
     uPassword: "",
@@ -9,9 +11,10 @@ function Login() {
 
   const login = async () => {
     await axios
-      .post("http://localhost:3000/login", formData)
+      .post("http://localhost:3000/student/login", formData)
       .then((res) => {
         console.log(res);
+        navigation("/student/dashboard");
       })
       .catch((err) => {
         console.log(err);

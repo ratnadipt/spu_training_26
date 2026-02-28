@@ -1,7 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function AdminLogin() {
+  let navigate = useNavigate();
   let [formData, setFormData] = useState({
     adminId: "",
     adminPass: "",
@@ -12,6 +14,10 @@ function AdminLogin() {
       .post("http://localhost:3000/admin/login", formData)
       .then((res) => {
         console.log(res);
+        if (res.data.status) {
+          console.log("success");
+          navigate("/admin-dashboard");
+        }
       })
       .catch((err) => {
         console.log(err);

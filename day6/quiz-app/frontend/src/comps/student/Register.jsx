@@ -12,7 +12,7 @@ function Register() {
 
   const register = async () => {
     await axios
-      .post("http://localhost:3000/register", formData)
+      .post("http://localhost:3000/student/register", formData)
       .then((res) => {
         console.log(res);
       })

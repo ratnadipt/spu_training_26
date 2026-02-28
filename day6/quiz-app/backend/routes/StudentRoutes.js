@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+const Student = require("../model/Student");
 // End Points
 router.post("/register", async (req, res) => {
   const data = req.body;

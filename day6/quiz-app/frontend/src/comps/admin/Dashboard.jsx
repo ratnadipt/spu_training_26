@@ -8,11 +8,11 @@ function Dashboard() {
 
       <div className="admin-container">
         <div className="col1">
-          {/* <Link to="/admin/dashboard">Dashboard</Link>
+          <Link to="/admin/dashboard">Dashboard</Link>
           <Link to="/admin/manage-student">Manage Student</Link>
           <Link to="/admin/manage-question">Manage Question</Link>
           <Link to="/admin/scores">Scores</Link>
-          <Link to="/admin/logout">LogOut</Link> */}
+          <Link to="/admin/logout">LogOut</Link>
         </div>
         <div className="col2">
           <ManageQuestions />
