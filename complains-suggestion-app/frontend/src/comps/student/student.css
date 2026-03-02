@@ -1,0 +1,66 @@
+/* student login page styling */
+.student-login {
+  margin: 15px;
+  margin-top: 50px;
+  padding: 10px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-sizing: 0px 0px 13px white;
+}
+.student-login h1 {
+  text-align: center;
+  color: var(--primary-color);
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.login-form .row {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.login-form input {
+  width: 80%;
+  outline: none;
+  border-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.login-form .btn-group {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+.btn-group .btn {
+  padding: 5px 20px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--secondary-color);
+}
+
+.btn-group .btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-group .btn-secondary {
+  background-color: var(--tertiary-color);
+}
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  border: 1px solid var(--primary-color);
+}
+/* student login page styling end */

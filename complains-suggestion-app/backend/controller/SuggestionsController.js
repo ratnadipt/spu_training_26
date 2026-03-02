@@ -9,7 +9,7 @@ const suggestionsHandler = async (req, res) => {
 
 const allSuggestionsHandler = async (req, res) => {
   //logic
-  const data = Suggestion.find();
+  const data = await Suggestion.find();
   res.send(data);
   res.end();
 };

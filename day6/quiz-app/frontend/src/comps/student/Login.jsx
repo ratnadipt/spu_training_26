@@ -34,7 +34,7 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="student-login">
       <h1>Student Login</h1>
       <form onSubmit={handleSave}>
         <div>

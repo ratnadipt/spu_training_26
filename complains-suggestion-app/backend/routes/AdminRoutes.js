@@ -11,6 +11,7 @@ const {
 const {
   suggestionsHandler,
   updateSuggestionStatusByIdHandler,
+  allSuggestionsHandler,
 } = require("../controller/SuggestionsController");
 const { getAllStudentsHandler } = require("../controller/StudentController");
 
@@ -26,7 +27,7 @@ router.get("/complaints", allComplaintsHandler);
 router.put("/complaint/:cid/:status", updateComplaintStatusByIdHandler);
 
 // suggestions
-router.get("/suggestions", suggestionsHandler);
+router.get("/suggestions", allSuggestionsHandler);
 router.put("/suggestion/:sid/:status", updateSuggestionStatusByIdHandler);
 
 // students

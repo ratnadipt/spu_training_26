@@ -1,3 +1,4 @@
+import "./App.css";
 import AdminLogin from "./comps/admin/AdminLogin";
 import Dashboard from "./comps/admin/Dashboard";
 import Login from "./comps/student/Login";

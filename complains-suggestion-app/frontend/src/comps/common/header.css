@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+.app-title {
+  color: var(--primary-color);
+}
+.header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.header nav ul li {
+  margin-right: 5px;
+}
+.header nav ul li a {
+  color: var(--primary-color);
+  padding: 4px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s ease;
+}
+
+.header nav ul li a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: scale(1.1);
+}

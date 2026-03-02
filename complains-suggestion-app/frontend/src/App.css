@@ -1,0 +1,58 @@
+/* rgb(232, 186, 20) */
+:root {
+  --primary-color: rgb(61, 87, 112);
+  --secondary-color: white;
+  --tertiary-color: tomato;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100dvh;
+  background: #4b79a1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 5px;
+}
+
+.home {
+  margin: 10px;
+  padding: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.home h1 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+.home p {
+  color: lightgray;
+}
+
+.home img {
+  margin-top: 30px;
+  width: 90dvw;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.success {
+  color: green;
+  text-align: center;
+}
